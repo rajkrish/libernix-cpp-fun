@@ -1,0 +1,21 @@
+
+h1.  Description
+
+This project contains a set of examples for common data structures, functions and algorithms in C and C++.
+
+
+h1.  Development status
+
+Alpha.  Use it at your own risk.
+
+
+h1.  License
+
+All code under this project is released under the GNU LGPL v3 license.
+
+h4.  Comments and Bug Reports
+
+Please report any issues and comments at the "GitHub project page":http://github.com/rajkrish/libernix-cpp-fun/issues
+
+Thank you.
+
