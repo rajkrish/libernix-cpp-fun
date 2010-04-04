@@ -3,6 +3,16 @@ h1.  Description
 
 This project contains a set of examples for common data structures, functions and algorithms in C and C++.
 
+h1.  Usage
+
+Assuming you have @GNU make/gmake@ installed, execute the following on the command line:
+
+<pre>
+$   cd libernix-cpp-fun
+$   gmake -srRf build.gmake  test
+</pre>
+
+This would run all the tests defined in the project.
 
 h1.  Development status
 
