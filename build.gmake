@@ -16,7 +16,7 @@ config:
 	echo "------------  Running config ------------------"
 	echo
 	mkdir -p $(build-dir)
-	pushd $(build-dir) && cmake .. || exit 2
+	pushd $(build-dir) && cmake .. -DCMAKE_BUILD_TYPE=Debug || exit 2
 	
 build:	config
 	echo
@@ -36,7 +36,17 @@ info:
 test-singly-linked-list:	clean build 
 	$(build-dir)/test/test-singly-linked-list
 	
+test-scoped-pointer:	clean build
+	$(build-dir)/test/test-scoped-pointer
 
-test: test-singly-linked-list
+test-circular-linked-list:	clean build 
+	$(build-dir)/test/test-circular-linked-list
+	
+#	test-scoped-pointer			\
+
+test:	test-singly-linked-list			\
+	test-circular-linked-list		\
+
+
 
 
